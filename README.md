@@ -128,8 +128,6 @@
 
        一些库，自己有需求的单独选，否则保持默认
 
-       - [x] libqrencode
-
    11. LuCI
 
        Web 图形化面板
@@ -164,12 +162,9 @@
        - [x] acme-dnsapi
        - [x] iperf3-ssl （测速）
        - [x] tcpdump（抓包）
+       - [x] tcping
 
    13. Utilities
-
-       - [x] Editors->vim-full（默认用的是青春版）
-
-       - [x] Shells->bash（默认用的是ash）
 
        - [x] Compression->bzip2
 
@@ -178,6 +173,14 @@
        - [x] Compression->unzip
 
        - [x] Compression->xz-utils
+
+       - [x] Disc->cfdisk（改变分区大小）
+
+       - [x] Filesystem->resize2fs（更新分区大小到文件系统）
+
+       - [x] Editors->vim-full（默认用的是青春版）
+       - [x] Shells->bash（默认用的是ash）
+       - [x] qrencode（导出配置为二维码）
 
    14. 保存
 
