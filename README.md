@@ -203,7 +203,7 @@
 
 1. 启动后默认 IP 地址为 192.168.1.1/24
 
-2. openssh-server 默认不允许 root 登录，ssh 会连不上，如果需要 root 登录 ssh，需要修改 sshd 配置文件（/etc/ssh/sshd_config），找到
+2. openssh-server 默认不允许 root 登录，ssh 会连不上，如果需要 root 登录 ssh，需要修改 sshd 配置文件（/etc/ssh/sshd_config），找到（一般在 32 行）
 
    ```shell
    #PermitRootLogin prohibite-password
@@ -213,6 +213,12 @@
 
    ```shell
    PermitRootLogin yes
+   ```
+
+   然后重启 sshd 进程
+
+   ```
+   service sshd restart
    ```
 
 ### 4. 二次编译
