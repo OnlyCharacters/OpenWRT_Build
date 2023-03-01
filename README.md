@@ -145,6 +145,7 @@
        - [ ] 反选 ss-obfs，用不上
        - [ ] 代理程序（ss, xray, naiveproxy）只在 passwall 和 passwall2 中选
        - [x] luci-app-passwall2
+       - [x] luci-app-ttyd（在web界面中使用命令行）
        - [x] luci-app-wireguard（wireguard）
 
    12. Network
@@ -198,7 +199,23 @@
 
    编译完成后，文件在 openwrt/bin/targets/ 对应架构的文件夹目录下
 
-### 3. 二次编译
+### 3. 使用
+
+1. 启动后默认 IP 地址为 192.168.1.1/24
+
+2. openssh-server 默认不允许 root 登录，ssh 会连不上，如果需要 root 登录 ssh，需要修改 sshd 配置文件（/etc/ssh/sshd_config），找到
+
+   ```shell
+   #PermitRootLogin prohibite-password
+   ```
+
+   将其改为
+
+   ```shell
+   PermitRootLogin yes
+   ```
+
+### 4. 二次编译
 
 在 openwrt 目录下执行
 
