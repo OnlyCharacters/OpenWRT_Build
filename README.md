@@ -10,7 +10,7 @@
 - 硬盘空间至少 60G
 - 全局代理
 
-- 全程使用使用非 root 用户
+- 全程使用非 root 用户
 
 ### 2. 编译前环境
 
@@ -143,7 +143,7 @@
        - [x] luci-app-acme（申请 https 证书）
        - [ ] 反选所有 ssr，用不上
        - [ ] 反选 ss-obfs，用不上
-       - [ ] 代理程序（ss, xray, naiveproxy）只在 passwall 和 passwall2 中选
+       - [ ] 代理程序（ss, xray, naiveproxy）只需要在你选的那个面板下面选，这里在 passwall2 里面选了
        - [x] luci-app-passwall2
        - [x] luci-app-ttyd（在web界面中使用命令行）
        - [x] luci-app-wireguard（wireguard）
