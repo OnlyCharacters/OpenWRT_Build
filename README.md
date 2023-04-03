@@ -119,6 +119,8 @@
       一些内核模块，包括文件系统、网卡、USB等等的驱动，如果需要选上，其他保持默认
 
       - [x] USB Support->kmod-usb-net-rtl8152
+      - [x] Wireless Driver->kmod-mt7921u
+      - [x] Wireless Driver->kmod-mt7921e
 
    9. Languages
 
@@ -170,9 +172,13 @@
 
        - [x] Compression->gzip
 
+       - [x] Compression->lz4
+
        - [x] Compression->unzip
 
        - [x] Compression->xz-utils
+
+       - [x] Compression->zstd
 
        - [x] Disc->cfdisk（改变分区大小）
 
@@ -181,6 +187,7 @@
        - [x] Editors->vim-full（默认用的是青春版）
        - [x] Shells->bash（默认用的是ash）
        - [x] qrencode（导出配置为二维码）
+       - [x] usbutils
 
    14. 保存
 
