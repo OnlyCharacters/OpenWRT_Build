@@ -93,7 +93,7 @@
       
       ![image-20230228152608622](imgs/image-20230228152608622.png)
 
-4. Base system
+6. Base system
    
    系统基本软件，这里有几个要注意的，从上到下依次操作如下
    
@@ -102,36 +102,35 @@
    - [x] dnsmasq-full（要勾选 ip-set 支持）
    - [ ] dropbear（ssh server，个人更习惯用 openssh-server）
 
-5. Administration
+7. Administration
    
    - [x] htop（命令行下图形化监控系统状态）
 
-6. Development
+8. Development
    
    一些开发编译用的程序，如 gcc，make 等，如果需要可以选
 
-7. firmware
+9. firmware
    
    一些芯片包括网卡芯片的固件，可以浏览一遍，如果有你自己需要用的网卡等芯片在里面，选上，否则保持默认
 
-8. Kernel module
-   
-   一些内核模块，包括文件系统、网卡、USB等等的驱动，如果需要选上，其他保持默认
-   
-   - [x] USB Support->kmod-usb-net-rtl8152
-   - [x] USB Support->kmod-usb-net-rndis
-   - [x] Wireless Driver->kmod-mt7921u
-   - [ ] 
+10. Kernel module
+    
+    一些内核模块，包括文件系统、网卡、USB等等的驱动，如果需要选上，其他保持默认
+    
+    - [x] USB Support->kmod-usb-net-rtl8152
+    - [x] USB Support->kmod-usb-net-rndis
+    - [x] Wireless Driver->kmod-mt7921u
 
-9. Languages
-   
-   编程语言，需要自己选，**建议选 python->python3**，以后运行一些 python3 脚本方便很多
+11. Languages
+    
+    编程语言，需要自己选，**建议选 python->python3**，以后运行一些 python3 脚本方便很多
 
-10. Libraries
+12. Libraries
     
     一些库，自己有需求的单独选，否则保持默认
 
-11. LuCI
+13. LuCI
     
     Web 图形化面板
     
@@ -149,7 +148,7 @@
     - [x] luci-app-ttyd（在web界面中使用命令行）
     - [x] luci-app-wireguard（wireguard）
 
-12. Network
+14. Network
     
     网络相关应用，慢慢挑，以下是个人喜好
     
@@ -163,11 +162,12 @@
     - [x] VPN->zerotier
     - [x] Version Control Systems->git-http（会自动选 git）
     - [x] acme-dnsapi
+    - [x] iftop（监控网卡）
     - [x] iperf3-ssl （测速）
     - [x] tcpdump（抓包）
     - [x] tcping
 
-13. Utilities
+15. Utilities
     
     - [x] Compression->bzip2
     
@@ -189,29 +189,31 @@
     
     - [x] Shells->bash（默认用的是ash）
     
+    - [x] Terminal->screen
+    
     - [x] qrencode（导出配置为二维码）
     
     - [x] usbutils
 
-14. 保存
+16. 保存
 
-6. 下载所选软件
-   
-   -j 后面接线程数，根据自己机器选择
-   
-   ```shell
-   make -j8 download V=s
-   ```
+17. 下载所选软件
+    
+    -j 后面接线程数，根据自己机器选择
+    
+    ```shell
+    make -j8 download V=s
+    ```
 
-7. 编译
-   
-   很多地方说第一次编译用单线程，但我一直用多线程没出事
-   
-   ```shell
-   make -j8 V=s
-   ```
-   
-   编译完成后，文件在 openwrt/bin/targets/ 对应架构的文件夹目录下
+18. 编译
+    
+    很多地方说第一次编译用单线程，但我一直用多线程没出事
+    
+    ```shell
+    make -j8 V=s
+    ```
+    
+    编译完成后，文件在 openwrt/bin/targets/ 对应架构的文件夹目录下
 
 ### 3. 使用
 
