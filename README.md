@@ -118,8 +118,12 @@
     
     一些内核模块，包括文件系统、网卡、USB等等的驱动，如果需要选上，其他保持默认
     
+    - [x] Kernel modules->Network Support->kmod-tcp-bbr
+    
     - [x] USB Support->kmod-usb-net-rtl8152
+    
     - [x] USB Support->kmod-usb-net-rndis
+    
     - [x] Wireless Driver->kmod-mt7921u
 
 11. Languages
